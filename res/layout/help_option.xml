@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:orientation="vertical" 
+ android:layout_width="fill_parent"
+ android:background="@color/white"
+ android:layout_height="fill_parent">
+ 
+    <!--  HEADER BAR LAYOUT  -->
+    
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:orientation="horizontal"
+        android:background="@color/lightGray" >
+        
+     <RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+     <ImageView
+         	android:id="@+id/imageLogo"
+            android:layout_width="50sp"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:src="@drawable/american_corner_logo_icon" />
+     
+        <TextView
+            android:id="@+id/americanCornersText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="American Corners"
+            android:textColor="@color/darkBlue"
+            android:textSize="22sp"
+            android:layout_toRightOf="@id/imageLogo"/>
+
+        <Spinner
+	        android:id="@+id/spinnerMenu"
+	        android:layout_width="30sp"
+	        android:layout_height="30sp"
+	        android:layout_gravity="center"
+	        android:text=""
+	        android:layout_marginRight="15sp"
+	        android:background="@drawable/menu_icon"
+	        android:layout_alignParentRight="true"
+	         />
+        
+        </RelativeLayout>
+
+    </LinearLayout>
+    
+  <!--  WHITE HORIZONTAL BAR BELOW HEADER -->
+    
+    <View
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="@color/buttonGray"/>   
+
+ 	<View
+	    android:layout_width="fill_parent"
+	    android:layout_height="12dp"
+	    android:background="@color/white"/>  
+
+ <!--  Dashboard Layout  -->
+ 
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+     
+     <LinearLayout
+	     android:layout_width="match_parent"
+	     android:layout_height="0dp"
+	     android:layout_weight="12"
+	     android:background="@color/lightBackGray"
+	     android:orientation="horizontal">
+
+    	<ScrollView
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			
+    	    <LinearLayout 
+    	        android:layout_width="fill_parent"
+    	        android:layout_height="fill_parent"
+    	        android:orientation="vertical">
+			
+	    	    <TextView 
+	    	        android:layout_width="fill_parent"
+    	        	android:layout_height="wrap_content"
+    	        	android:text="Help"
+    	        	android:textSize="25sp"
+    	        	android:layout_marginLeft="5sp"
+				    android:textColor="@color/black"
+	    	        />
+	    	    
+	    	  <TextView
+	    	      android:layout_width="fill_parent"
+	    	      android:layout_height="wrap_content"
+	    	      android:text="How do you checkout a book?"
+	    	      android:textSize="20sp"
+	    	      android:layout_marginTop="2sp"
+	    	      android:layout_marginBottom="2sp"
+	    	      android:layout_marginLeft="5sp"
+	    	      android:textColor="@color/darkBlue"
+	    	      />
+	    	  
+	    	  <TextView
+	    	      android:layout_width="fill_parent"
+	    	      android:layout_height="wrap_content"
+	    	      android:text="- Find the book through the Search page, enter the member information, and press “Checkout”."
+	    	      android:textSize="18sp"
+	    	      android:layout_marginLeft="7sp"
+	    	      android:textColor="@color/darkGray"
+	    	      />
+	    	  
+	    	  <TextView
+	    	      android:layout_width="fill_parent"
+	    	      android:layout_height="wrap_content"
+	    	      android:text="How do you return a book?"
+	    	      android:textSize="20sp"
+	    	      android:layout_marginTop="2sp"
+	    	      android:layout_marginBottom="2sp"
+	    	      android:layout_marginLeft="5sp"
+	    	      android:textColor="@color/darkBlue"
+	    	      />
+	    	  
+	    	  <TextView
+	    	      android:layout_width="fill_parent"
+	    	      android:layout_height="wrap_content"
+	    	      android:text="- In the Home Page, press the “Return Item” button.  Then, enter the book ISBN and member information.  Finally, press “Return”."
+	    	      android:textSize="18sp"
+	    	      android:layout_marginLeft="7sp"
+	    	      android:textColor="@color/darkGray"
+	    	      />
+	    	  
+	    	  <TextView
+	    	      android:layout_width="fill_parent"
+	    	      android:layout_height="wrap_content"
+	    	      android:text="How do you sync the inventory?"
+	    	      android:textSize="20sp"
+	    	      android:layout_marginTop="2sp"
+	    	      android:layout_marginBottom="2sp"
+	    	      android:layout_marginLeft="5sp"
+	    	      android:textColor="@color/darkBlue"
+	    	      />
+	    	  
+	    	  <TextView
+	    	      android:layout_width="fill_parent"
+	    	      android:layout_height="wrap_content"
+	    	      android:text="- Press the menu button in the top right corner.  Then, press “Manage Inventory”.  Press “Sync Inventory” and input the LibraryThing account information for your library.  Press “Sync Now” and wait for the download to finish.  The library inventory has been updated and its contents are now in the database."
+	    	      android:textSize="18sp"
+	    	      android:layout_marginLeft="7sp"
+	    	      android:textColor="@color/darkGray"
+	    	      />
+	    	  
+	    	  <TextView
+	    	      android:layout_width="fill_parent"
+	    	      android:layout_height="wrap_content"
+	    	      android:text="How do you view books currently checked out?"
+	    	      android:textSize="20sp"
+	    	      android:layout_marginTop="2sp"
+	    	      android:layout_marginBottom="2sp"
+	    	      android:layout_marginLeft="5sp"
+	    	      android:textColor="@color/darkBlue"
+	    	      />
+	    	  
+	    	  <TextView
+	    	      android:layout_width="fill_parent"
+	    	      android:layout_height="wrap_content"
+	    	      android:text="- You can press either the “Items on Loan” or “Items Overdue” title on the home page or the “Reports” tab on the bottom.  The “Items on Loan” button will allow you to view a report of the items currently checked out and the “Items Overdue” button will allow you to view a report of the items overdue.  Both buttons will allow you see who is checking out the item and the due dates.  The “Reports” button will allow you view the entire inventory currently checked out."
+	    	      android:textSize="18sp"
+	    	      android:layout_marginLeft="7sp"
+	    	      android:textColor="@color/darkGray"
+	    	      />
+	    	  
+	    	  <TextView
+	    	      android:layout_width="fill_parent"
+	    	      android:layout_height="wrap_content"
+	    	      android:text="How do you manually edit member and inventory information?"
+	    	      android:textSize="20sp"
+	    	      android:layout_marginTop="2sp"
+	    	      android:layout_marginBottom="2sp"
+	    	      android:layout_marginLeft="5sp"
+	    	      android:textColor="@color/darkBlue"
+	    	      />
+	    	  
+	    	  <TextView
+	    	      android:layout_width="fill_parent"
+	    	      android:layout_height="wrap_content"
+	    	      android:text="- If the item you are trying to checkout is not within the database, you can manually add it to the database.  However, remember to add the added item to the LibraryThing account or else the next sync will remove the added item.  To add items, go to either press the “Manage Inventory” or “Manage Member” button from the top right drop down menu.  Press either “Add Item” or “Modify Item” depending on the requested action and enter the specified information."
+	    	      android:textSize="18sp"
+	    	      android:layout_marginLeft="7sp"
+	    	      android:textColor="@color/darkGray"
+	    	      />
+	    	  
+	    	  <TextView
+	    	      android:layout_width="fill_parent"
+	    	      android:layout_height="wrap_content"
+	    	      android:text="How do you send a report?"
+	    	      android:textSize="20sp"
+	    	      android:layout_marginTop="2sp"
+	    	      android:layout_marginBottom="2sp"
+	    	      android:layout_marginLeft="5sp"
+	    	      android:textColor="@color/darkBlue"
+	    	      />
+	    	  
+	    	  <TextView
+	    	      android:layout_width="fill_parent"
+	    	      android:layout_height="wrap_content"
+	    	      android:text="- Open the desired report using the method specified in the fourth question.  Then press the “Export” button.  If you have an email application installed in the device you will be able to send the report from the application.  The report CSV file is attached to the email.  Currently, titles and names with commas will ruin the format of reports because commas are delimiters for CSV files.  This will be fixed at a later update."
+	    	      android:textSize="18sp"
+	    	      android:layout_marginLeft="7sp"
+	    	      android:textColor="@color/darkGray"
+	    	      />
+	    	  
+	    	  <TextView
+	    	      android:layout_width="fill_parent"
+	    	      android:layout_height="wrap_content"
+	    	      android:text="How do you edit user accounts?"
+	    	      android:textSize="20sp"
+	    	      android:layout_marginTop="2sp"
+	    	      android:layout_marginBottom="2sp"
+	    	      android:layout_marginLeft="5sp"
+	    	      android:textColor="@color/darkBlue"
+	    	      />
+	    	  
+	    	  <TextView
+	    	      android:layout_width="fill_parent"
+	    	      android:layout_height="wrap_content"
+	    	      android:text="- From the top right drop down menu, press the “Settings” button.  Then press “Add New User” or “Modify User” depending on the requested action and enter the specified information."
+	    	      android:textSize="18sp"
+	    	      android:layout_marginLeft="7sp"
+	    	      android:textColor="@color/darkGray"
+	    	      />
+	    	  
+    	    </LinearLayout>
+    	    
+   	    </ScrollView>
+ 
+	</LinearLayout>
+	
+     <View 
+            android:layout_width="match_parent"
+     		android:layout_height="12sp"
+     		android:background="@color/white"	/>
+	 	
+	 	<!--  BOTTOM MENU BAR LAYOUT  -->
+ 
+		 <LinearLayout
+		     android:layout_width="match_parent"
+		     android:layout_height="40dp"
+		     android:gravity="bottom"
+		     android:background="@color/lightGray"
+		     android:orientation="horizontal"
+		     android:weightSum="3" >
+     
+		     <!--  HOME BUTTON  -->
+		     
+		     <Button
+		        android:id="@+id/btnHomeBottom"
+		        android:layout_width="10dp"
+		        android:layout_height="40dp"
+		        android:layout_weight="1"
+		        android:gravity="center"
+		        android:textStyle="bold"
+		        android:textColor="@color/black"
+		        android:background="@color/lightGray"
+		        android:textSize="20sp"
+		        android:onClick="home"
+		        android:text="Home" />
+		     
+		     <View
+		   		 android:layout_height="40dp"
+		   		 android:layout_width="1dp"
+		   		 android:background="@color/black"/>
+		     
+		     <!--  SEARCH BUTTON  -->
+		     
+		     <Button
+		        android:id="@+id/btnSearchBottom"
+		        android:layout_width="10dp"
+		        android:layout_height="40dp"
+		        android:layout_weight="1"
+		        android:gravity="center"
+		        android:textStyle="bold"
+		        android:textColor="@color/black"
+		        android:background="@color/lightGray"
+		        android:textSize="20sp"
+		        android:onClick="search"
+		        android:text="Search" />
+		     
+		     <View
+		   		 android:layout_height="40dp"
+		   		 android:layout_width="1dp"
+		   		 android:background="@color/black"/>
+		     
+		     <!--  CHECKOUT BUTTON  -->
+		     
+		     <Button
+		         android:id="@+id/btnReportsBottom"
+		         android:layout_width="10dp"
+		        android:layout_height="40dp"
+		        android:layout_weight="1"
+		        android:gravity="center"
+		        android:textStyle="bold"
+		        android:textColor="@color/black"
+		        android:background="@color/lightGray"
+		        android:textSize="20sp"
+		        android:onClick="home"
+		        android:text="Reports" />
+      
+ 		</LinearLayout>
+ 
+	</LinearLayout>
+
+</LinearLayout>
